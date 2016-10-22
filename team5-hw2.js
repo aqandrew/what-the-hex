@@ -6,6 +6,8 @@ $.fn.hexed = function (settings) {
 	if !settings.hasOwnProperty('turns') {
 		settings.turns = 10;
 	}
+	
+	var actualColor = randomColor();
 
 	return this;
 };
