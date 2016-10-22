@@ -7,7 +7,11 @@ $.fn.hexed = function (settings) {
 		settings.turns = 10;
 	}
 
-	// TODO everything
-
 	return this;
 };
+
+// TODO function to randomize RGB values
+// TODO scoring function
+// TODO CheckIt! button
+// TODO jQuery UI sliders which pdate RGB values
+// TODO challenge
