@@ -10,7 +10,22 @@ $.fn.hexed = function (settings) {
 	return this;
 };
 
-// TODO function to randomize RGB values
+function randomValue(maxExclusive) {
+	return Math.random() * maxExclusive;
+}
+
+function randomColor() {
+	var red = randomValue(256);
+	var green = randomValue(256);
+	var blue = randomValue(256);
+	
+	return {
+		'red': red,
+		'green': green,
+		'blue': blue
+	};
+}
+
 // TODO scoring function
 // TODO CheckIt! button
 // TODO jQuery UI sliders which pdate RGB values
