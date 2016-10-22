@@ -30,5 +30,5 @@ function randomColor() {
 
 // TODO scoring function
 // TODO CheckIt! button
-// TODO jQuery UI sliders which pdate RGB values
+// TODO jQuery UI sliders which update RGB values
 // TODO challenge
