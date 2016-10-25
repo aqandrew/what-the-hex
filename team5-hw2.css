@@ -1,15 +1,49 @@
-p.in {
-	display: inline;
+body {
+	background-color: #444 !important;
+	color: #ddd !important;
+	font-weight: lighter;
+	text-align: center;
+	font-family: 'Droid Sans', sans-serif;
 }
 
-div {
+h1 {
+	font-family: 'Nova Mono', monospace;
+	font-size: 3em;
+}
+
+h1, h5 {
+	margin-bottom: 5px;
+}
+
+h1, h5, h6 {
+	margin-top: 5px;
+	font-weight: lighter;
+}
+
+h2 {
+	font-weight: lighter;
+}
+
+#colorpickerField1, #colorpickerField2, #colorpickerField3 {
 	clear: both;
+	color: #333;
+}
+
+body > button {
+	margin-top: 10px;
+	color: #333;
+	font-weight: normal;
 }
 
 .myCanvas {
 	width: 200px;
 	height: 150px;
 	border: 1px solid #d3d3d3;
+	background-color: #fff;
+}
+
+#colorValueDisplay {
+	clear: both;
 }
 
 #red .ui-slider-range {
@@ -17,7 +51,7 @@ div {
 }
 
 #red .ui-slider-handle {
-	border-color: #ef2929;
+	border: 2px solid #ef2929;
 }
 
 #green .ui-slider-range {
@@ -25,7 +59,7 @@ div {
 }
 
 #green .ui-slider-handle {
-	border-color: #8ae234;
+	border: 2px solid #8ae234;
 }
 
 #blue .ui-slider-range {
@@ -33,12 +67,10 @@ div {
 }
 
 #blue .ui-slider-handle {
-	border-color: #729fcf;
+	border: 2px solid #729fcf;
 }
 
 #red, #green, #blue {
-	 float: left;
-	 clear: left;
 	 width: 300px;
-	 margin: 15px;
+	 margin: 15px auto;
 }

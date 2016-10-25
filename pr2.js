@@ -30,6 +30,8 @@ $(document).ready(function() {
 		editElement.fillStyle = "rgb("+Math.round(defaultRed) +"," + Math.round(defaultGreen) +"," +Math.round(defaultBlue)+")";
 		editElement.stroke();
 		editElement.fill();
+		
+		return this;
 	};
 });
 
