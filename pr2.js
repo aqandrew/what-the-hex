@@ -72,6 +72,10 @@ function getScore() {
 	var totalTime = start - (new Date().getTime());
 
 	var roundScore = ((15 - difficulty - percentageOff)/(15-difficulty)) * (15000-totalTime);
+	
+	if (roundScore < 0) {
+		roundScore = 0;
+	}
 
 	totalScore += roundScore;
 	$("#thisRound").text("Round Score: " + roundScore.toFixed(2));
