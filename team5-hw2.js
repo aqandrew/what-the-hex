@@ -82,6 +82,8 @@ function getScore() {
 	$("#totalScore").text("Total Score: " + totalScore.toFixed(2));
 
 	turnCount += 1;
+	
+	$("#turnsLeft").text("Turns left: " + (turns - turnCount));
 	$("#myCanvas").hexed(settings);
 }
 
