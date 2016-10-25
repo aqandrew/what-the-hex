@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+  <head>
+    <title>What the Hex?</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css">
+    <script type="text/javascript" src="pr2.js"></script>
+    <link rel="stylesheet" href="team5-hw2.css">
+		<link href="https://fonts.googleapis.com/css?family=Droid+Sans|Nova+Mono" rel="stylesheet">
+  </head>
+  <body>
+    <h1>What the Hex?</h1>
+    <h5>
+			Your goal is to guess the RGB values of the swatch on the left, by matching the right swatch with the sliders.
+		</h5>
+    <h6>
+			Press the "Got it!" button when you are complete.
+    </h6>
+
+    <canvas id="myCanvas" width="200" class="myCanvas">
+        Your browser does not support the HTML5 canvas tag.
+    </canvas>
+
+    <canvas id="myCanvas2" width="200" height="150" class="myCanvas">
+        Your browser does not support the HTML5 canvas tag.
+    </canvas>
+
+		<div id="colorValueDisplay">
+			<label>
+				Red:
+				<input type="text" maxlength="6" size="6" id="colorpickerField1" value="0" onchange="fixRed()">
+			</label>
+			<label>
+				Green:
+				<input type="text" maxlength="6" size="6" id="colorpickerField2" value="0" onchange="fixGreen()">
+			</label>
+			<label>
+				Blue:
+				<input type="text" maxlength="6" size="6" id="colorpickerField3" value="0" onchange="fixBlue()">
+			</label>
+		</div>
+
+    <button type="button" onclick="getScore()">
+        Got it!
+    </button>
+
+    <div id="red"></div>
+    <div id="green"></div>
+    <div id="blue"></div>
+
+    <h2 id="thisRound">
+        Round Score: 0
+    </h2>
+
+    <h2 id="totalScore">
+        Total Score: 0
+    </h2>
+  </body>
+</html>
